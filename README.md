@@ -1,24 +1,63 @@
-# README
+# Coffee Store
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A simple web application to manage a list of coffee products. Users can add, edit, remove, and export information about different coffees including their name, flavor, and price.
 
-Things you may want to cover:
+## Features
 
-* Ruby version
+- Add new coffee entries with name, flavor, and price.
+- Edit or delete existing coffees.
+- View all coffees in a Bootstrap-styled table.
+- Export all coffee data as a CSV file.
 
-* System dependencies
+## Technologies
 
-* Configuration
+- Ruby on Rails
+- Bootstrap 4 (via CDN)
+- SQLite (default development database)
 
-* Database creation
+## Setup Instructions
 
-* Database initialization
+1. **Clone the repository**
+    ```bash
+    git clone https://github.com/YOUR_GITHUB_USERNAME/coffee_store.git
+    cd coffee_store
+    ```
 
-* How to run the test suite
+2. **Install dependencies**
+    ```bash
+    bundle install
+    ```
 
-* Services (job queues, cache servers, search engines, etc.)
+3. **Set up the database**
+    ```bash
+    rails db:migrate
+    ```
 
-* Deployment instructions
+4. **Start the server**
+    ```bash
+    rails server
+    ```
 
-* ...
+5. **Visit the app**
+    Open [http://localhost:3000](http://localhost:3000) in your web browser.
+
+## Exporting Coffees
+
+- Click the **Export Coffees** button on the homepage to download all coffee entries in CSV format.
+
+## Notes
+
+- Do **not** commit sensitive files like `config/master.key` or production credentials.
+- For collaborative development, consider branch-based workflows and code reviews.
+
+## License
+
+[Specify your license here, if applicable]
+
+## Contributing
+
+Pull requests are welcome. For significant changes, please open an issue first to discuss what you would like to change.
+
+---
+
+For questions or support, please contact [Your Name or Contact Info].
